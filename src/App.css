@@ -14,12 +14,13 @@
 }
 
 .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-background-color: lightgrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/12/05/58/greenhouses-6702462_1280.jpg");
+    /* background-color: lightgrey; */
 }
 
 .content {
@@ -36,7 +37,7 @@ background-color: lightgrey;
 
 .landing_content {
  margin-top: 430px;
-  margin-left: 100px;
+  margin-left: 200px; /* 100px */
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
