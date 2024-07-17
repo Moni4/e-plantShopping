@@ -5,7 +5,7 @@ import { addItem } from './CreatSlice';
 import Cart from "./CartItem";
 import './ProductList.css'
 
-function ProductList() {
+function ProductList(props) {
     
   
     const plantsArray = [
@@ -264,7 +264,7 @@ function ProductList() {
         <div>
              <div className="navbar" style={styleObj}>
             <div className="tag">
-               <div className="luxury">
+               <div className="luxury" onClick={props.toLanding}>
                <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
                <a href="/" style={{textDecoration:'none'}}>
                         <div>
