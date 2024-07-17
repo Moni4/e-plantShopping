@@ -16,7 +16,10 @@ export const CreatSlice = createSlice({
         }
     },
     removeItem: (state, action) => {
-        state.items = state.items.filter(item => item.name !== action.payload);
+        const { name } = action.payload;
+        console.log('init', state.items)
+        state.items = state.items.filter(item => item.name !== name);
+        console.log('end', state.items)
     },
     updateQuantity: (state, action) => {
         const { name, quantity } = action.payload;

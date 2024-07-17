@@ -59,6 +59,10 @@ body {
     justify-content: center;
 }
 
+.category-title {
+    text-align: center;
+}
+
 /* Product Card */
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
