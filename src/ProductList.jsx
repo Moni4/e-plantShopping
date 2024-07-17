@@ -245,6 +245,10 @@ function ProductList() {
         setShowCart(data);
     };
 
+    const alreadyInCart = (itemName) => {
+        return cartItems.some((item) => item.name === itemName);
+    }
+
     const [addedToCart, setAddedToCart] = useState({});
     const handleAddToCart = (product) => {
         dispatch(addItem(product));
@@ -301,6 +305,7 @@ function ProductList() {
                                     <img className="product-image" src={plant.image} alt={plant.name} />
                                     <div className='product-price'>{plant.cost}</div>
                                     <div>{plant.description}</div>
+                                    {/* style={{backgroundColor:alreadyInCart(plant.name)?"gray":"#615EFC"}} disabled={alreadyInCart(plant.name)? true:false} */}
                                     <button className='product-button' onClick={() => handleAddToCart(plant)}>Add to Cart</button>
                                 </div>
                             ))}
